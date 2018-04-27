@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >
+     Calculator
+    </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content>
+  
+  <input value="{{calcStatement}}" class="b" type="text" maxlength="20" size="43"><br/>
+  <input class="b" type="text" value="{{fullStatement}}" maxlength="20" size="43"><br/>
+  <input class="a" (click)="operationSqare()" type="button" value="^">
+  <input class="a" (click)="operationReal('sqrt')" type="button" value="sqrt">
+  <input class="a" (click)="operationReal('log')" type="button" value="log">
+  <input class="a" (click)="reset()" type="button" value="C">
+  <input class="a" (click)="operationReal('*')" type="button" value="X "><br/>
+  <input class="a" (click)="operationReal('sin')" type="button" value="sin">
+  <input class="a" (click)="operationInput(1)" type="button" value="1"> 
+  <input class="a" (click)="operationInput(2)" type="button" value="2">
+  <input class="a" (click)="operationInput(3)" type="button" value="3">
+  <input class="a" (click)="operationReal('+')" type="button" value="+"><br/>
+  <input class="a" (click)="operationReal('cos')" type="button" value="cos">
+  <input class="a" (click)="operationInput(4)" type="button" value="4" >
+  <input class="a" (click)="operationInput(5)" type="button" value="5" >
+  <input class="a" (click)="operationInput(6)" type="button" value="6" >
+  <input class="a" (click)="operationReal('-')" type="button" value="-" ><br/>
+  <input class="a" (click)="operationReal('tan')" type="button" value="tan">
+  <input class="a" (click)="operationInput(7)" type="button" value="7" >
+  <input class="a" (click)="operationInput(8)" type="button" value="8" >
+  <input class="a" (click)="operationInput(9)" type="button" value="9" >
+  <input class="a" (click)="operationReal('/')" type="button" value="/" ><br/>
+  <input class="a" type="button" value="$" >
+  <input class="a" (click)="operationPercnt('%')" type="button" value="%" >
+  <input class="a" (click)="operationInput(0)" type="button" value="0" >
+  <input class="a" (click)="operationInput('.')" type="button" value="." >
+  <input class="a" (click)="finalResult()" type="button" value="=" >
+</ion-content>
